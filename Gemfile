@@ -22,6 +22,9 @@ gem 'bootstrap-sass'
 gem 'newrelic_rpm'
 gem 'unicorn'
 
+gem 'devise'
+gem "omniauth-google-oauth2"
+
 group :development do
   gem 'spring'
   gem 'better_errors'
