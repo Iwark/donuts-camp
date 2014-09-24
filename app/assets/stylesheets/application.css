@@ -1,0 +1,84 @@
+@import "bootstrap-custom.scss";
+
+@import 'nprogress';
+@import 'nprogress-bootstrap';
+
+$basic-font-color: #444;
+
+div, span, td, th, p, h1, h2, h3, h4{
+  color: $basic-font-color;
+}
+
+*{
+  box-sizing: border-box;
+  -webkit-touch-callout:none;
+}
+
+html, body{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  // overflow-x: hidden;
+}
+
+a{
+  color: #dd0044;
+  text-decoration: none;
+  &:hover{
+    text-decoration: none;
+    color: #aa4488;
+  }
+  &.link-disabled{
+    pointer-events: none;
+  }
+}
+
+p, ul, li{
+  margin: 0;
+  padding: 0;
+}
+li{
+  list-style-type: none;
+}
+
+textarea{
+  resize: none;
+  min-height: 100px;
+}
+
+.form-error{
+  width: 100%;
+  padding: 0 20px;
+  h2{
+    font-size: 18px;
+    color: #f44;
+  }
+}
+
+.break{
+  word-break: break-all;
+}
+.bold{
+  font-weight: 600;
+}
+
+.clear{
+  clear:both;
+}
+
+.mt10{
+  margin-top: 10px;
+}
+
+.mt20{
+  margin-top: 20px;
+}
+
+.pl10{
+  padding-left: 10px;
+}
+
+.center{
+  text-align: center;
+}
