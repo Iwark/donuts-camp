@@ -4,7 +4,7 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable, :omniauthable
 
-  validates :email, presence: true, format: { with:/@donuts.ne.jp$/ }
+  validates :email, presence: true, format: { with:/@donuts.ne.jp\z/ }
 
   def self.find_for_google_oauth2(auth)
     user = User.where(email: auth.info.email).first
