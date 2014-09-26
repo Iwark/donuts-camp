@@ -1,4 +1,4 @@
 - if user_signed_in?
-  = link_to 'ログアウト', destroy_user_session_path, method: :delete
+  = link_to 'ログアウト', destroy_user_session_path, method: :delete, class: 'entry-btn'
 - else
-  = link_to 'Donutsアカウントで参加登録', user_omniauth_authorize_path(:google_oauth2)
+  = link_to 'Donutsアカウントで参加登録', user_omniauth_authorize_path(:google_oauth2), class: 'entry-btn'

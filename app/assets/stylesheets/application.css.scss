@@ -20,6 +20,53 @@ html, body{
   margin: 0;
   padding: 0;
   // overflow-x: hidden;
+  background-color: black;
+}
+
+.wrapper{
+  position: relative;
+  background-image: image-url("d_hack_bg.jpg");
+  background-color: black;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding-top: 48.6%;
+  .img-text{
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    height: 100%;
+  }
+  .img-icon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+  }
+  .img-hand{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+  }
+}
+.container{
+  text-align: center;
+  .entry-btn{
+    display: inline-block;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 240px;
+    height: 44px;
+    line-height: 44px;
+    color: #d6dde2;
+    background-color: #10b6c1;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+  }
 }
 
 a{
