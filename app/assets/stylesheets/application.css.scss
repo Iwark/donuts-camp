@@ -24,47 +24,62 @@ html, body{
 }
 
 .wrapper{
-  background-image: image-url("d_hack_bg.jpg");
-  background-color: black;
-  background-size: 100%;
-  background-repeat: no-repeat;
   width: 100%;
   padding-top: 48.6%;
+  text-align: center;
+  .img-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95%;
+  }
   .img-text{
     position: absolute;
-    top: 20px;
-    left: 40px;
+    top: 30px;
+    left: 15%;
     height: 70%;
   }
   .img-icon{
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 95%;
     z-index: 3;
   }
   .img-hand{
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 95%;
     z-index: 5;
   }
 }
 .container{
-  text-align: center;
-  .entry-btn{
-    display: inline-block;
-    margin-top: 80px;
-    margin-bottom: 40px;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  width: 100%;
+  padding-top: 48.6%;
+  .entry-area{
+    position: absolute;
     width: 240px;
-    height: 44px;
-    line-height: 44px;
-    color: #d6dde2;
-    background-color: #10b6c1;
-    border-radius: 8px;
-    font-size: 16px;
-    font-weight: 600;
+    right: 20%;
+    bottom: 50px;
+    .entry-btn{
+      position: absolute;
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+      height: 44px;
+      line-height: 44px;
+      color: #d6dde2;
+      background-color: rgba(#10b6c1,0.8);
+      border: 1px solid #f77;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 600;
+      z-index: 10;
+    }
   }
 }
 
@@ -127,4 +142,21 @@ textarea{
 
 .center{
   text-align: center;
+}
+
+@media screen and (max-width: 640px)  {
+  .container{
+    .entry-area{
+      width: 200px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      top: 150%;
+      .entry-btn{
+        font-size: 14px;
+        height: 40px;
+        line-height: 40px;
+      }
+    }
+  }
 }
