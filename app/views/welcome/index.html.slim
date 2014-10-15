@@ -1,5 +1,12 @@
+= image_tag 'bg.jpg', class: 'bg'
+
+/ p
+/   | 登録が完了しました。
+/   - if user_signed_in?
+/     | 登録が完了しました。
+
 .entry-area
   - if user_signed_in?
-    = link_to 'ログアウト', destroy_user_session_path, method: :delete, class: 'entry-btn'
+    = link_to image_tag('icon2.png'), destroy_user_session_path, method: :delete, class: 'ebtn logout'
   - else
-    = link_to 'Donutsアカウントで参加登録', user_omniauth_authorize_path(:google_oauth2), class: 'entry-btn'
+    = link_to image_tag('icon1.png'), user_omniauth_authorize_path(:google_oauth2), class: 'ebtn login'
